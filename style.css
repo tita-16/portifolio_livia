@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.sobre, .projetos {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.sobre img {
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.projetos {
+    background-color: #fff;
+}
+
+.ferramentas {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex; 
+    gap: 15px; 
+}
+.ferramentas li {
+    font-size: 12px; 
+    background-color: #FFA500; 
+    color: white; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    font-weight: bold; 
+}
+
+.projeto {
+    display: inline-block;
+    width: 48%;
+    margin: 1%;
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.projeto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.contato {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.contato p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contato-lista {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contato-lista li {
+    font-size: 1.2rem;
+}
+
+.contato-lista a {
+    text-decoration: none;
+    color: #333;
+    background-color: #FFA500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contato-lista a:hover {
+    background-color: #e07b00;
+}
+.navbar ul {
+    list-style-type: none; /* Remove os pontos da lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinha os itens na horizontal */
+    gap: 15px; /* Menos espaço entre os itens */
+}
+
+.navbar li {
+    font-size: 1rem; /* Tamanho do texto reduzido */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    display: block; /* Garante que o link ocupe todo o item da lista */
+    padding: 5px 10px; /* Menos espaço interno para deixar os links mais compactos */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    border-radius: 5px; /* Cantos arredondados para os links */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.navbar a:hover {
+    color: #fff; /* Cor do texto ao passar o mouse */
+    background-color: #FFA500; /* Cor de fundo ao passar o mouse */
+}
+
+.navbar {
+    position: absolute; /* Posiciona a barra de navegação */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da borda direita */
+    z-index: 10; /* Garante que a navegação apareça por cima dos outros conteúdos */
+}
+
+header {
+    position: relative;
+    padding-bottom: 10px; /* Caso precise de mais espaço na parte inferior */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.projeto {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* Botão estilo e posição */
+.btn-projeto {
+     font-size: 12px; 
+    background-color: #FFA500; 
+    color: white; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    font-weight: bold;
+      position: absolute;
+    bottom: 15px;
+    right: 15px; 
+}
+
+.btn-projeto:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    /* Ajuste para telas menores */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 90%; /* Deixa o conteúdo mais estreito em telas pequenas */
+    }
+
+    .projeto{
+            width: 100%; /* Em telas menores, os projetos ocuparão toda a largura */
+            margin-bottom: 20px;
+        }
+
+    .ferramentas {
+        flex-direction: row; /* Ferramentas ficam lado a lado */
+        align-items: center; /* Alinha no centro */
+        gap: 10px; /* Menos espaço entre as ferramentas */
+        flex-wrap: wrap; /* Permite que as ferramentas se ajustem e quebrem para a próxima linha, se necessário */
+    }
+    .ferramentas li {
+        font-size: 9px; /* Reduz ainda mais o tamanho da fonte no celular */
+        padding: 5px 10px; /* Reduz o padding no celular */
+    }
+
+    .contato-lista {
+        flex-direction: row; /* Itens de contato lado a lado */
+        gap: 15px; /* Mais espaço entre os itens */
+    }
+
+    .navbar {
+        position: static; /* Remove a barra fixa no topo */
+        margin-top: 20px; /* Espaço adicional em cima */
+        text-align: center;
+    }
+
+    .navbar ul {
+        display: block; /* Alinha os links da navbar verticalmente */
+    }
+
+    .navbar a {
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+}
